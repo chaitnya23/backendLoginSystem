@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <style>
+        .log-in-box {
+
+            position: absolute;
+            top: 5rem;
+            width: 20rem;
+            left: 25rem;
+            background-color: rgba(80, 78, 78, 0.705);
+            border-radius: 5px;
+            
+        }
+        .log-in-box .btn{
+            width: 100%;
+        }
+        .log-in-box img{
+            width: 100%;
+            height: 100%;
+        }
+        .userimg{
+            height: 8rem;
+        }
+        
+    </style>
+</head>
+<body>
+    {{>navbar}}
+    <h2>log in page</h2>
+    <div class="container log-in-box ">
+        <div class="row my-3">
+            <h1 class="text-white ">Log in here</h1>
+        </div>
+        <div class="row userimg">
+            <img src="/images/userimg.png" alt="">
+        </div>
+     <form action="/home" method="post">
+        <div class="form-group mt-2">
+            <label  for="userName" class="text-white">User Name</label>
+            <input class="form-control mt-2 input" type="text" name="username" id="userName">
+        </div>
+        <div class="form-group mt-2">
+            <label  for="pass" class="text-white">Password</label>
+            <input class="form-control mt-2 input" type="password" name="password" id="pass">
+        </div>
+        <div class="form-group my-3">
+            <input type="submit" value="Log in" class="btn submit btn-primary">
+        </div>
+     </form>   
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <style>
+        .home{
+            width: 30rem;
+            position: absolute;
+            top: 7rem;
+            left: 17rem;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.582);
+            
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+    {{>navbar}}
+    <h1 class="text-center text-white">Welcome To My world</h1>
+    <div class="container home border py-3 shadow-lg">
+        <h1 class="text-center">Register or Log in</h1>
+        <div class="row justify-content-around mt-4">
+            <div class="col-3">
+                <button class="btn btn-dark">
+                    <a class="text-white border-none" href="/login">Log in</a>
+                </button>
+            </div>
+             <div class="col-3">
+                <button class="btn btn-dark">
+                    <a class="text-white border-none" href="/register">Register</a>
+
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
